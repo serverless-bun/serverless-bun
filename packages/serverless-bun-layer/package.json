@@ -1,0 +1,14 @@
+{
+  "name": "serverless-bun-layer",
+  "description": "A zero-config Serverless Framework plugin to automate the management of AWS Bun Lambda Layer.",
+  "main": "dist/index.js",
+  "scripts": {
+    "swcify": "swc ./src/index.ts --config-file ../../.swcrc --out-dir ./dist",
+    "dev": "bun run swcify --watch",
+    "build": "bun run swcify"
+  },
+  "dependencies": {
+    "jszip": "^3.10.1",
+    "just-pascal-case": "^3.2.0"
+  }
+}

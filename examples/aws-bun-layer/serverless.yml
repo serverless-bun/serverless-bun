@@ -1,0 +1,24 @@
+service: aws-bun-layer
+frameworkVersion: '3'
+
+configValidationMode: error
+
+plugins:
+  - serverless-bun-layer
+
+custom:
+  bunLayer:
+    release: 1.0.25
+
+provider:
+  name: aws
+  architecture: arm64
+  runtime: provided.al2
+
+functions:
+  myFunction:
+    handler: dist/handler.fetch
+    events:
+      - httpApi:
+          method: GET
+          path: /
