@@ -1,13 +1,13 @@
 {
-  "name": "serverless-bun",
+  "name": "@serverless-bun/monorepo",
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
   "scripts": {
-    "preinstall": "npx only-allow bun",
-    "dev:layer": "bun run --cwd packages/serverless-bun-layer dev",
-    "build:layer": "bun run --cwd packages/serverless-bun-layer build"
+    "preinstall": "npx only-allow pnpm",
+    "dev": "pnpm --filter \"./packages/**\" dev",
+    "dev:layer": "pnpm --filter @serverless-bun/layer dev",
+    "build": "pnpm --filter \"./packages/**\" build",
+    "build:layer": "pnpm --filter @serverless-bun/layer build",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.8.1",

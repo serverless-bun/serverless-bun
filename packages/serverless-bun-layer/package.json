@@ -1,11 +1,34 @@
 {
-  "name": "serverless-bun-layer",
+  "name": "@serverless-bun/layer",
+  "version": "0.1.0",
+  "private": false,
   "description": "A zero-config Serverless Framework plugin to automate the management of AWS Bun Lambda Layer.",
   "main": "dist/index.js",
+  "keywords": [
+    "serverless",
+    "serverless plugin",
+    "plugin",
+    "bun",
+    "aws lambda",
+    "aws",
+    "lambda",
+    "lambda layer"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/junwen-k/serverless-bun.git",
+    "directory": "packages/serverless-bun-layer"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "swcify": "swc ./src/index.ts --config-file ../../.swcrc --out-dir ./dist",
-    "dev": "bun run swcify --watch",
-    "build": "bun run swcify"
+    "build": "pnpm run swcify",
+    "dev": "pnpm run swcify --watch",
+    "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
     "jszip": "^3.10.1",
