@@ -7,14 +7,14 @@ A zero-config [Serverless Framework](https://www.serverless.com/) plugin to auto
 Install the plugin with your favorite package manager:
 
 ```bash
-npm install serverless-bun-layer -D # or 'bun add serverless-bun-layer -D'
+npm install @serverless-bun/layer -D # or 'bun add @serverless-bun/layer -D'
 ```
 
 Then add the plugin to your `serverless.yml` file:
 
 ```yml
 plugins:
-  - serverless-bun-layer
+  - '@serverless-bun/layer'
 ```
 
 Ensure that the function's `architecture` and `runtime` are compatible with the Bun Layer:
@@ -79,7 +79,7 @@ The Serverless Bun Layer plugin simplifies the integration of the [AWS Bun Lambd
 
 The compiled Lambda Layer is then intelligently injected into your `serverless.yml` configuration, providing a smooth and hassle-free experience. The plugin identifies functions compatible with the Bun Lambda Layer, automatically including the layer in their configurations. With the Serverless Bun Layer plugin, deploying your Bun-powered Serverless applications becomes a straightforward process, handling the complexities of Lambda Layer integration seamlessly behind the scenes.
 
-### CloudFormation Variable
+## CloudFormation Variable
 
 Serverless Framework is powered by [AWS Cloudformation](https://aws.amazon.com/cloudformation/) under the hood. Serverless Bun Layer plugin injects Bun Lambda Layer into your Cloudformation template. For advanced use cases, you can utilize this reference in your Serverless Framework configuration as follows:
 
