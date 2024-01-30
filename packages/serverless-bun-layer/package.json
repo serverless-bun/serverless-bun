@@ -4,6 +4,9 @@
   "private": false,
   "description": "A zero-config Serverless Framework plugin to automate the management of AWS Bun Lambda Layer.",
   "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "keywords": [
     "serverless",
     "serverless plugin",
