@@ -2,7 +2,7 @@
   "name": "aws-bun-layer",
   "devDependencies": {
     "@serverless-bun/layer": "0.1.0",
-    "@types/bun": "^1.1.0",
+    "@types/bun": "^1.1.1",
     "serverless": "^3.38.0"
   },
   "scripts": {
