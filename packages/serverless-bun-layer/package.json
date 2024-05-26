@@ -1,7 +1,7 @@
 {
   "name": "@serverless-bun/layer",
   "description": "A zero-config Serverless Framework plugin to automate the management of AWS Bun Lambda Layer.",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
