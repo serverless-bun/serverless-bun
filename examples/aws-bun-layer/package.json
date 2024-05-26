@@ -1,5 +1,6 @@
 {
   "name": "aws-bun-layer",
+  "private": true,
   "type": "module",
   "scripts": {
     "sls": "sls",
