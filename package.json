@@ -10,6 +10,8 @@
     "lint": "turbo lint",
     "test": "turbo test",
     "release": "changeset version",
+    "publish-packages": "turbo run build lint test && changeset publish",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "prepare": "husky"
   },
   "packageManager": "pnpm@9.1.1",
