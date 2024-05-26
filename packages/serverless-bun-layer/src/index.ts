@@ -113,7 +113,7 @@ type ServerlessProvider = Service['provider'] & { architecture?: string }
 
 const ETAG_FILE = '.etag.txt'
 
-class BunLayerPlugin implements Plugin {
+export default class BunLayerPlugin implements Plugin {
   serverless: Serverless
   provider: ReturnType<typeof this.serverless.getProvider>
   hooks: Plugin.Hooks
@@ -417,5 +417,3 @@ class BunLayerPlugin implements Plugin {
     this.logging.log.info('Injected Bun runtime layer')
   }
 }
-
-module.exports = BunLayerPlugin

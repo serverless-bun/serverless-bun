@@ -4,11 +4,11 @@ frameworkVersion: '3'
 configValidationMode: error
 
 plugins:
-  - serverless-bun-layer
+  - '@serverless-bun/layer'
 
 custom:
   bunLayer:
-    release: 1.0.25
+    release: 1.1.10
 
 provider:
   name: aws

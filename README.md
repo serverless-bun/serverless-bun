@@ -1,6 +1,6 @@
 # Serverless Bun
 
-![Serverless Bun Layer](./docs/thumbnail.png 'serverless-bun-layer')
+![Serverless Bun](./docs/thumbnail.png 'serverless-bun')
 
 [![Serverless](http://public.serverless.com/badges/v3.svg)](http://www.serverless.com)
 [![License](https://img.shields.io/github/license/junwen-k/serverless-bun)](https://raw.githubusercontent.com/junwen-k/serverless-bun/main/LICENSE)
