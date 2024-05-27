@@ -11,6 +11,6 @@
   "devDependencies": {
     "@serverless-bun/layer": "workspace:*",
     "@types/bun": "^1.1.3",
-    "serverless": "^3.38.0"
+    "serverless": "^4.0.24"
   }
 }
