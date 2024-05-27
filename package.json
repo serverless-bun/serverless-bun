@@ -6,6 +6,7 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "build": "turbo build",
+    "build:packages": "turbo --filter=./packages/* build",
     "dev": "turbo dev",
     "lint": "turbo lint",
     "test": "turbo test",
