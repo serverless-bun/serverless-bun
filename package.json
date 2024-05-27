@@ -9,8 +9,6 @@
     "dev": "turbo dev",
     "lint": "turbo lint",
     "test": "turbo test",
-    "release": "changeset version",
-    "publish-packages": "turbo run build lint test && changeset publish",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "prepare": "husky"
   },
@@ -19,6 +17,7 @@
     "node": ">=20.13.1"
   },
   "devDependencies": {
+    "@changesets/changelog-github": "^0.5.0",
     "@changesets/cli": "^2.27.3",
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
