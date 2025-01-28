@@ -364,7 +364,7 @@ export default class BunLayerPlugin implements Plugin {
   ) {
     this.logging.log.info('Injecting Bun runtime layer')
 
-    const compatibleRuntimes = ['provided.al2', 'provided']
+    const compatibleRuntimes = ['provided.al2023', 'provided.al2', 'provided']
     const compatibleArchitectures = [arch === 'x64' ? 'x86_64' : 'arm64']
 
     this.serverless.service.layers = {
